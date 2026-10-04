@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Cosmic Gradient -->
+    <radialGradient id="spaceBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#162248" />
+      <stop offset="45%" stop-color="#0E1630" />
+      <stop offset="85%" stop-color="#080C1B" />
+      <stop offset="100%" stop-color="#050813" />
+    </radialGradient>
+
+    <!-- Metallic Gold Gradients -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5C0" />
+      <stop offset="25%" stop-color="#F3CA65" />
+      <stop offset="50%" stop-color="#E5A93C" />
+      <stop offset="75%" stop-color="#B87B1D" />
+      <stop offset="100%" stop-color="#8F590E" />
+    </linearGradient>
+
+    <linearGradient id="goldLight" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D49B2E" />
+      <stop offset="40%" stop-color="#FCE588" />
+      <stop offset="70%" stop-color="#FFF9D2" />
+      <stop offset="100%" stop-color="#E5A93C" />
+    </linearGradient>
+
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8F590E" stop-opacity="0.3" />
+      <stop offset="30%" stop-color="#FCE588" />
+      <stop offset="70%" stop-color="#FFF9D2" />
+      <stop offset="100%" stop-color="#8F590E" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Peacock Turquoise Gradient -->
+    <linearGradient id="turquoiseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4EFFF3" />
+      <stop offset="30%" stop-color="#00D2C4" />
+      <stop offset="70%" stop-color="#00989E" />
+      <stop offset="100%" stop-color="#004D61" />
+    </linearGradient>
+
+    <!-- Celestial Cyan Glow -->
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#0083B0" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0083B0" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Golden Aura Glow -->
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE885" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#D49B2E" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Drop Shadows and Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Deep Cosmic Background Circle -->
+  <circle cx="400" cy="400" r="390" fill="url(#spaceBg)" />
+
+  <!-- Ambient Light Clouds -->
+  <circle cx="400" cy="320" r="280" fill="url(#goldGlow)" />
+  <circle cx="450" cy="280" r="220" fill="url(#cyanGlow)" />
+
+  <!-- Outer Swirling Orbital Golden Rings -->
+  <!-- Ring 1 Outer Orbit -->
+  <path d="M 120 400 A 280 280 0 1 1 680 400 A 280 280 0 0 1 120 400" 
+        fill="none" stroke="url(#goldStroke)" stroke-width="2.5" opacity="0.75" />
+  
+  <!-- Sweeping Asymmetric Orbital Bands -->
+  <path d="M 110 380 C 110 210, 260 100, 450 110 C 640 120, 710 280, 680 460 C 650 630, 490 700, 310 680 C 180 660, 100 520, 120 380"
+        fill="none" stroke="url(#goldGradient)" stroke-width="3" filter="url(#glow)" opacity="0.85" />
+
+  <path d="M 140 430 C 130 570, 270 690, 430 690 C 600 690, 700 560, 680 400 C 660 220, 500 130, 350 135"
+        fill="none" stroke="url(#turquoiseGradient)" stroke-width="1.8" opacity="0.6" filter="url(#glow)" />
+
+  <path d="M 170 330 C 200 180, 340 140, 480 155 C 620 170, 670 300, 650 440"
+        fill="none" stroke="url(#goldLight)" stroke-width="1.2" opacity="0.7" />
+
+  <!-- Stardust & Sparkling Stars -->
+  <!-- 4-Point Star 1 -->
+  <g transform="translate(180, 190) scale(1.2)" fill="#FFF6C7" filter="url(#glow)">
+    <path d="M 0 -12 Q 0 0 12 0 Q 0 0 0 12 Q 0 0 -12 0 Q 0 0 0 -12 Z" />
+  </g>
+  <!-- 4-Point Star 2 -->
+  <g transform="translate(630, 220) scale(1.3)" fill="#FFF6C7" filter="url(#glow)">
+    <path d="M 0 -12 Q 0 0 12 0 Q 0 0 0 12 Q 0 0 -12 0 Q 0 0 0 -12 Z" />
+  </g>
+  <!-- 4-Point Star 3 -->
+  <g transform="translate(620, 510) scale(1.1)" fill="#FFF6C7" filter="url(#glow)">
+    <path d="M 0 -12 Q 0 0 12 0 Q 0 0 0 12 Q 0 0 -12 0 Q 0 0 0 -12 Z" />
+  </g>
+  <!-- 4-Point Star 4 -->
+  <g transform="translate(180, 520) scale(0.9)" fill="#FFF6C7" filter="url(#glow)">
+    <path d="M 0 -12 Q 0 0 12 0 Q 0 0 0 12 Q 0 0 -12 0 Q 0 0 0 -12 Z" />
+  </g>
+  <!-- 4-Point Star 5 (Bottom) -->
+  <g transform="translate(180, 620) scale(1.2)" fill="#FFF6C7" filter="url(#glow)">
+    <path d="M 0 -12 Q 0 0 12 0 Q 0 0 0 12 Q 0 0 -12 0 Q 0 0 0 -12 Z" />
+  </g>
+  <!-- Small Star Dots -->
+  <circle cx="240" cy="140" r="2.5" fill="#FFF" opacity="0.9" />
+  <circle cx="560" cy="130" r="3" fill="#FFF9D2" opacity="0.85" />
+  <circle cx="680" cy="330" r="2.5" fill="#FFF" opacity="0.8" />
+  <circle cx="130" cy="480" r="3" fill="#4EFFF3" opacity="0.8" />
+  <circle cx="270" cy="650" r="2" fill="#FFF" opacity="0.75" />
+  <circle cx="560" cy="640" r="2.5" fill="#FFF9D2" opacity="0.9" />
+  <circle cx="490" cy="100" r="3.5" fill="#FFF" opacity="0.95" />
+
+  <!-- Inner Medallion Frame -->
+  <g filter="url(#shadow)">
+    <!-- Medallion Disk -->
+    <circle cx="400" cy="330" r="175" fill="#0A1024" stroke="url(#goldGradient)" stroke-width="4.5" />
+    <circle cx="400" cy="330" r="168" fill="none" stroke="url(#goldLight)" stroke-width="1.5" opacity="0.6" />
+  </g>
+
+  <!-- Golden Crescent Moon (Top of Inner Medallion) -->
+  <g transform="translate(400, 235)" filter="url(#glow)">
+    <path d="M 0 -38 C 16 -38, 30 -26, 32 -10 C 24 -16, 12 -16, 2 -10 C -12 -2, -14 16, 0 28 C -22 24, -34 4, -30 -16 C -26 -30, -12 -38, 0 -38 Z"
+          fill="url(#goldLight)" stroke="url(#goldGradient)" stroke-width="1" />
+    <!-- Mini Stars inside Crescent Aura -->
+    <circle cx="-5" cy="-2" r="2" fill="#FFF" />
+    <circle cx="8" cy="-5" r="1.5" fill="#FFF" />
+    <circle cx="-12" cy="10" r="2" fill="#FFF" />
+  </g>
+
+  <!-- Central Emblem: Feather-Quill Pen & Angelic Wings -->
+  <g id="featherQuill" filter="url(#shadow)">
+    
+    <!-- LEFT WING / FEATHER (Rich Sculpted Metallic Gold) -->
+    <g fill="url(#goldGradient)" stroke="url(#goldLight)" stroke-width="1">
+      <!-- Outer Wing Feather 1 -->
+      <path d="M 395 350 C 370 330, 290 280, 265 185 C 295 210, 335 245, 365 285 C 385 315, 395 345, 395 350 Z" />
+      <!-- Outer Wing Feather 2 -->
+      <path d="M 395 350 C 360 325, 275 250, 255 155 C 285 190, 330 225, 370 270 C 390 305, 395 345, 395 350 Z" />
+      <!-- Topmost Crest Feather -->
+      <path d="M 395 345 C 365 300, 295 200, 275 125 C 315 175, 360 225, 390 280 Z" />
+      
+      <!-- Middle Layer Golden Feather Vanes -->
+      <path d="M 395 365 C 360 350, 310 320, 285 270 C 320 285, 360 320, 395 365 Z" opacity="0.95" />
+      <path d="M 395 380 C 350 375, 305 355, 275 315 C 315 330, 360 360, 395 380 Z" opacity="0.9" />
+      
+      <!-- Arabesque Filigree Scroll on Left Base -->
+      <path d="M 395 400 C 365 410, 330 405, 315 385 C 305 370, 315 350, 335 355 C 350 360, 355 375, 345 385 C 335 390, 330 380, 335 375"
+            fill="none" stroke="url(#goldLight)" stroke-width="3.5" stroke-linecap="round" />
+      <path d="M 380 415 C 350 435, 320 420, 325 395"
+            fill="none" stroke="url(#goldLight)" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+
+    <!-- RIGHT WING / FEATHER (Vibrant Peacock Turquoise & Cyan) -->
+    <g fill="url(#turquoiseGradient)" stroke="#8CFFF8" stroke-width="0.8" filter="url(#glow)">
+      <!-- Outer Turquoise Feather 1 -->
+      <path d="M 405 350 C 430 330, 510 280, 535 185 C 505 210, 465 245, 435 285 C 415 315, 405 350, 405 350 Z" />
+      <!-- Outer Turquoise Feather 2 -->
+      <path d="M 405 350 C 440 325, 525 250, 545 155 C 515 190, 470 225, 430 270 C 410 305, 405 345, 405 350 Z" />
+      <!-- Topmost Turquoise Feather -->
+      <path d="M 405 345 C 435 300, 505 200, 525 125 C 485 175, 440 225, 410 280 Z" />
+      
+      <!-- Middle Layer Turquoise Feather Vanes -->
+      <path d="M 405 365 C 440 350, 490 320, 515 270 C 480 285, 440 320, 405 365 Z" opacity="0.95" />
+      <path d="M 405 380 C 450 375, 495 355, 525 315 C 485 330, 440 360, 405 380 Z" opacity="0.9" />
+
+      <!-- Arabesque Filigree Scroll on Right Base -->
+      <path d="M 405 400 C 435 410, 470 405, 485 385 C 495 370, 485 350, 465 355 C 450 360, 445 375, 455 385 C 465 390, 470 380, 465 375"
+            fill="none" stroke="url(#goldLight)" stroke-width="3.5" stroke-linecap="round" />
+      <path d="M 420 415 C 450 435, 480 420, 475 395"
+            fill="none" stroke="url(#goldLight)" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Center Quill Spine (Golden Rachis) -->
+    <path d="M 400 170 Q 398 290 400 415" 
+          fill="none" stroke="url(#goldLight)" stroke-width="5" stroke-linecap="round" filter="url(#glow)" />
+
+    <!-- FOUNTAIN PEN NIB (Sharp Pointed Golden Calligraphy Nib) -->
+    <g transform="translate(400, 420)" filter="url(#glow)">
+      <!-- Nib Body -->
+      <path d="M -16 0 L 16 0 L 14 20 L 0 52 L -14 20 Z" 
+            fill="url(#goldGradient)" stroke="#FFF6C7" stroke-width="1.5" />
+      <!-- Nib Wings -->
+      <path d="M -16 0 Q -24 15 -14 20" fill="url(#goldLight)" />
+      <path d="M 16 0 Q 24 15 14 20" fill="url(#goldLight)" />
+      <!-- Breather Hole -->
+      <circle cx="0" cy="18" r="3.5" fill="#0A1024" stroke="url(#goldLight)" stroke-width="1" />
+      <!-- Ink Slit to Point -->
+      <line x1="0" y1="21.5" x2="0" y2="52" stroke="#0A1024" stroke-width="2" />
+      <!-- Nib Highlight Facet -->
+      <polygon points="-8,2 -2,2 -1,45 -6,20" fill="#FFF9D2" opacity="0.6" />
+    </g>
+
+  </g>
+
+  <!-- ARABIC CALLIGRAPHY & TYPOGRAPHY -->
+  <g filter="url(#shadow)">
+    <!-- Main Calligraphy: نجوي عمار -->
+    <text x="400" y="555" 
+          font-family="'Tajawal', 'Cairo', 'Amiri', 'Traditional Arabic', sans-serif" 
+          font-weight="900" 
+          font-size="88" 
+          text-anchor="middle" 
+          direction="rtl"
+          fill="url(#goldGradient)" 
+          stroke="#7A4E0B" 
+          stroke-width="2"
+          letter-spacing="2"
+          filter="url(#glow)">
+      نجوي عمار
+    </text>
+
+    <!-- Inner Highlight for 3D Gold Look -->
+    <text x="400" y="553" 
+          font-family="'Tajawal', 'Cairo', 'Amiri', 'Traditional Arabic', sans-serif" 
+          font-weight="900" 
+          font-size="88" 
+          text-anchor="middle" 
+          direction="rtl"
+          fill="url(#goldLight)"
+          letter-spacing="2">
+      نجوي عمار
+    </text>
+
+    <!-- Subtitle: للدعاية والإعلان -->
+    <text x="400" y="625" 
+          font-family="'Tajawal', 'Cairo', 'Plus Jakarta Sans', sans-serif" 
+          font-weight="800" 
+          font-size="40" 
+          text-anchor="middle" 
+          direction="rtl"
+          fill="#FFFFFF" 
+          stroke="#050813"
+          stroke-width="1"
+          letter-spacing="4">
+      للدعاية والإعلان
+    </text>
+  </g>
+
+  <!-- Circular Star-Dust Orbit Crossing Under Text -->
+  <path d="M 230 655 C 330 685, 470 685, 570 655" 
+        fill="none" stroke="url(#goldLight)" stroke-width="2" opacity="0.8" />
+  <circle cx="400" cy="672" r="3" fill="#FFF6C7" />
+  <circle cx="360" cy="670" r="2" fill="#FFF" />
+  <circle cx="440" cy="670" r="2" fill="#FFF" />
+
+</svg>
