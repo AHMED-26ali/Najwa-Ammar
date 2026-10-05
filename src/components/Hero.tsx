@@ -30,12 +30,18 @@ export default function Hero({ onOpenConsultation, onOpenContact }: HeroProps) {
               <span className="text-slate-900 font-extrabold">{HERO_DATA.brandName}</span>
             </div>
 
-            {/* Main Headline with generous line-height to prevent letter clipping */}
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-slate-900 tracking-tight leading-[1.3] sm:leading-[1.2] text-balance">
-              نصنع أفكاراً <span className="inline-block px-1 pb-1 bg-gradient-to-l from-emerald-600 via-teal-600 to-amber-500 bg-clip-text text-transparent">تُرى…</span>
+            {/* Main Headline with generous line-height and top padding to prevent letter clipping */}
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-slate-900 tracking-normal leading-[1.4] sm:leading-[1.25] text-balance py-1">
+              نصنع أفكاراً{' '}
+              <span className="inline-block px-1.5 py-1.5 bg-gradient-to-l from-emerald-600 via-teal-600 to-amber-500 bg-clip-text text-transparent">
+                تُرى…
+              </span>
               <br className="hidden sm:inline" />{' '}
-              وإعلانات <span className="relative inline-block px-1 pb-1">
-                <span className="relative z-10 bg-gradient-to-l from-amber-500 via-orange-500 to-emerald-600 bg-clip-text text-transparent">تُحقق الفرق</span>
+              وإعلانات{' '}
+              <span className="relative inline-block px-1 py-1">
+                <span className="relative z-10 inline-block px-1 py-1 bg-gradient-to-l from-amber-500 via-orange-500 to-emerald-600 bg-clip-text text-transparent">
+                  تُحقق الفرق
+                </span>
                 <span className="absolute bottom-1.5 left-0 right-0 h-2.5 sm:h-3 bg-amber-200/50 -rotate-1 rounded-sm -z-0"></span>
               </span>
             </h1>
