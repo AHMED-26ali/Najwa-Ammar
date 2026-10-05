@@ -72,9 +72,9 @@ export default function ContactSection({}: ContactSectionProps) {
           <div className="lg:col-span-5 space-y-6">
             
             {/* Quick Direct Communication Channels - Zero Raw Links or Phone Digits on Buttons */}
-            <div className="bg-slate-900 text-white p-7 sm:p-9 rounded-[36px] border border-slate-800 shadow-2xl space-y-6">
+            <div className="bg-slate-900 text-white p-5 sm:p-9 rounded-[28px] sm:rounded-[36px] border border-slate-800 shadow-2xl space-y-6">
               <div className="text-center sm:text-right">
-                <h3 className="text-2xl font-bold text-white mb-1.5">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1.5">
                   قنوات التواصل المباشرة
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-400">
@@ -196,7 +196,7 @@ export default function ContactSection({}: ContactSectionProps) {
           </div>
 
           {/* Left Column: Interactive Location Map Block */}
-          <div className="lg:col-span-7 bg-white rounded-[36px] border border-slate-200/90 shadow-xl overflow-hidden p-6 sm:p-8 space-y-6">
+          <div className="lg:col-span-7 bg-white rounded-[28px] sm:rounded-[36px] border border-slate-200/90 shadow-xl overflow-hidden p-4 sm:p-8 space-y-5 sm:space-y-6">
             
             {/* Location Header with Landmark and Plus Code */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">

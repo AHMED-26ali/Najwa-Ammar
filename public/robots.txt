@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://najwaammar.vercel.app/sitemap.xml
+Sitemap: https://najwaammar.vercel.app/sitemap.txt

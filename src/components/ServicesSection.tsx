@@ -157,32 +157,32 @@ export default function ServicesSection({ onSelectService, onRequestQuote }: Ser
               <div
                 key={service.id}
                 onClick={() => onSelectService(service)}
-                className={`group cursor-pointer relative bg-white/80 backdrop-blur-xl rounded-[28px] p-7 border border-white/80 shadow-[0_4px_20px_rgba(0,0,0,0.03)] ${styles.hoverBorder} hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between`}
+                className={`group cursor-pointer relative bg-white/80 backdrop-blur-xl rounded-[24px] sm:rounded-[28px] p-5 sm:p-7 border border-white/80 shadow-[0_4px_20px_rgba(0,0,0,0.03)] ${styles.hoverBorder} hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between`}
               >
                 {/* Top Row: Icon & English Subtitle / Badge */}
                 <div>
-                  <div className="flex items-center justify-between mb-5">
-                    <div className={`w-13 h-13 rounded-2xl flex items-center justify-center transition-colors duration-300 ${styles.iconBox}`}>
+                  <div className="flex items-center justify-between mb-4 sm:mb-5">
+                    <div className={`w-11 h-11 sm:w-13 sm:h-13 rounded-2xl flex items-center justify-center transition-colors duration-300 ${styles.iconBox}`}>
                       {getIcon(service.icon, service.accentColor)}
                     </div>
                     {service.badge ? (
-                      <span className="px-3 py-1 rounded-full text-xs font-bold bg-amber-400/20 text-amber-800 border border-amber-400/30">
+                      <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[11px] sm:text-xs font-bold bg-amber-400/20 text-amber-800 border border-amber-400/30">
                         {service.badge}
                       </span>
                     ) : (
-                      <span className="text-xs font-mono font-medium text-slate-400 dir-ltr">
+                      <span className="text-[11px] sm:text-xs font-mono font-medium text-slate-400 dir-ltr truncate max-w-[120px] sm:max-w-none">
                         {service.englishTitle}
                       </span>
                     )}
                   </div>
 
                   {/* Service Title */}
-                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors mb-2.5">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors mb-2 leading-snug">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm text-slate-600 leading-relaxed mb-5">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4 sm:mb-5">
                     {service.description}
                   </p>
 

@@ -45,10 +45,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FCFAF6] text-slate-900 selection:bg-emerald-500 selection:text-white relative">
+    <div className="min-h-screen bg-[#FCFAF6] text-slate-900 selection:bg-emerald-500 selection:text-white relative overflow-x-hidden max-w-full w-full">
       
       {/* Dynamic Ambient Background Gradients */}
-      <div className="fixed inset-0 pointer-events-none -z-20 overflow-hidden">
+      <div className="fixed inset-0 pointer-events-none -z-20 overflow-hidden max-w-full">
         <div className="absolute -top-40 right-1/4 w-[600px] h-[600px] bg-gradient-to-br from-emerald-200/25 via-teal-100/20 to-transparent rounded-full blur-[140px]" />
         <div className="absolute top-1/3 -left-40 w-[600px] h-[600px] bg-gradient-to-tr from-amber-200/25 via-yellow-100/20 to-transparent rounded-full blur-[140px]" />
         <div className="absolute -bottom-40 right-1/3 w-[700px] h-[600px] bg-gradient-to-tl from-blue-200/20 via-emerald-100/15 to-transparent rounded-full blur-[140px]" />
@@ -58,7 +58,7 @@ export default function App() {
       <Navbar onOpenConsultation={handleOpenConsultation} />
 
       {/* Main Content Layout */}
-      <main>
+      <main className="overflow-x-hidden max-w-full w-full">
         {/* 1. Hero Section with Interactive Showcase */}
         <Hero
           onOpenConsultation={handleOpenConsultation}

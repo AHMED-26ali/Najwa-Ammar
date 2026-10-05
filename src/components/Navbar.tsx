@@ -32,27 +32,32 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/80 backdrop-blur-2xl border-b border-emerald-950/5 shadow-xs py-3.5'
-          : 'bg-white/40 backdrop-blur-md py-5 border-b border-transparent'
+          ? 'bg-white/95 backdrop-blur-xl border-b border-slate-200/80 shadow-xs py-2 sm:py-3'
+          : 'bg-white/80 sm:bg-white/50 backdrop-blur-md py-2.5 sm:py-4 border-b border-slate-200/40'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-10 sm:h-12">
           {/* Zone 1: Single text element wordmark with official logo */}
           <a
             href="#hero"
-            className="group flex items-center gap-3 text-lg sm:text-xl font-black tracking-tight text-slate-900 focus:outline-none"
+            className="group flex items-center gap-2 sm:gap-3 text-slate-900 focus:outline-none"
           >
-            <div className="relative w-11 h-11 shrink-0 rounded-full p-0.5 bg-gradient-to-tr from-amber-400 via-emerald-500 to-blue-500 shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+            <div className="relative w-8 h-8 sm:w-10 sm:h-10 shrink-0 rounded-full p-0.5 bg-gradient-to-tr from-amber-400 via-emerald-500 to-blue-500 shadow-sm shadow-amber-500/20 group-hover:scale-105 transition-transform">
               <img
                 src="/najwa-ammar-logo.svg"
                 alt="شعار نجوى عمار للدعاية والإعلان"
                 className="w-full h-full object-contain rounded-full bg-slate-950"
               />
             </div>
-            <span className="text-slate-900 group-hover:text-emerald-700 transition-colors">
-              {HERO_DATA.brandName}
-            </span>
+            <div className="flex flex-col text-right">
+              <span className="text-xs sm:text-base lg:text-lg font-black tracking-tight text-slate-900 group-hover:text-emerald-700 transition-colors leading-tight">
+                {HERO_DATA.brandName}
+              </span>
+              <span className="text-[10px] text-slate-500 font-medium hidden sm:inline leading-none mt-0.5">
+                للدعاية والإعلان والمطبوعات
+              </span>
+            </div>
           </a>
 
           {/* Zone 2: Clean text navigation links */}
@@ -69,14 +74,14 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
           </nav>
 
           {/* Zone 3: Single primary action CTA */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <button
               onClick={onOpenConsultation}
-              className="relative group overflow-hidden rounded-full px-5 py-2.5 text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 shadow-md shadow-emerald-600/20 hover:shadow-lg hover:shadow-emerald-600/30 active:scale-95 transition-all duration-200 whitespace-nowrap"
+              className="hidden sm:inline-flex relative group overflow-hidden rounded-full px-4 sm:px-5 py-2 text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 shadow-md shadow-emerald-600/20 hover:shadow-lg hover:shadow-emerald-600/30 active:scale-95 transition-all duration-200 whitespace-nowrap"
             >
               <span className="relative z-10 flex items-center gap-1.5">
-                <span>اطلب خدمتك الآن</span>
-                <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <span>اطلب خدمتك</span>
+                <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </span>
               <span className="absolute inset-0 bg-gradient-to-r from-amber-500 via-emerald-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
@@ -84,7 +89,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             {/* Mobile menu trigger */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-xl text-slate-700 bg-white/80 border border-slate-200/80 hover:bg-slate-100 transition-colors"
+              className="lg:hidden p-1.5 sm:p-2 rounded-xl text-slate-700 bg-white/90 border border-slate-200/90 hover:bg-slate-100 active:scale-95 transition-all"
               aria-label="القائمة"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

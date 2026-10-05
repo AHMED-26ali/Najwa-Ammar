@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://najwaammar.vercel.app/</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://najwaammar.vercel.app/images/hero_creative_agency_1791143022006.jpg</image:loc>
-      <image:title>مطبعة نجوى عمار للدعاية والإعلان - طباعة فاخرة وتسويق إبداعي</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://najwaammar.vercel.app/images/brand_identity_mockup_1791143034344.jpg</image:loc>
-      <image:title>تصميم الهوية البصرية والشعارات - مطبعة نجوى عمار</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://najwaammar.vercel.app/images/outdoor_billboard_ads_1791143050039.jpg</image:loc>
-      <image:title>إعلانات الطرق واللوحات الخارجية والشاشات الرقمية</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://najwaammar.vercel.app/images/iphone_ad_mockup_1791143111186.jpg</image:loc>
-      <image:title>إعلانات السوشيال ميديا والتسويق الرقمي</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://najwaammar.vercel.app/images/video_production_studio_1791143061925.jpg</image:loc>
-      <image:title>إنتاج الفيديو الإعلاني والموشن جرافيك</image:title>
-    </image:image>
   </url>
 </urlset>
