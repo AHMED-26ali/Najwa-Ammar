@@ -30,8 +30,12 @@ export default function WhyChooseUs() {
             <span>بصمتنا الاستثنائية</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            لماذا تختار <span className="bg-gradient-to-l from-amber-400 via-yellow-300 to-emerald-400 bg-clip-text text-transparent">نجوى عمار</span> للدعاية والإعلان؟
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-snug sm:leading-normal tracking-normal py-1">
+            لماذا تختار{' '}
+            <span className="inline-block py-1 px-1 bg-gradient-to-l from-amber-400 via-yellow-300 to-emerald-400 bg-clip-text text-transparent">
+              نجوى عمار
+            </span>{' '}
+            للدعاية والإعلان؟
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg">

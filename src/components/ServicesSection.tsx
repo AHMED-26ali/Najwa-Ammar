@@ -106,8 +106,11 @@ export default function ServicesSection({ onSelectService, onRequestQuote }: Ser
             <span>خدماتنا المتكاملة</span>
           </div>
           
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
-            حلول إعلانية تجمع <span className="bg-gradient-to-r from-emerald-600 to-amber-500 bg-clip-text text-transparent">البهجة والفخامة</span>
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-snug sm:leading-normal tracking-normal py-1">
+            حلول إعلانية تجمع{' '}
+            <span className="inline-block py-1 px-1 bg-gradient-to-r from-emerald-600 to-amber-500 bg-clip-text text-transparent">
+              البهجة والفخامة
+            </span>
           </h2>
           
           <p className="text-slate-600 text-base sm:text-lg">

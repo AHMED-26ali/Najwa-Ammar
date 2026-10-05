@@ -39,8 +39,11 @@ export default function PortfolioGallery({ onSelectProject }: PortfolioGalleryPr
               <Sparkles className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
               <span>معرض الأعمال وقصص النجاح</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
-              أعمال صُنعت لتلهم <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-amber-500 bg-clip-text text-transparent">وتُبهر</span>
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-snug sm:leading-normal tracking-normal py-1">
+              أعمال صُنعت لتلهم{' '}
+              <span className="inline-block py-1 px-1 bg-gradient-to-r from-emerald-600 via-teal-600 to-amber-500 bg-clip-text text-transparent">
+                وتُبهر
+              </span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
               استكشف نماذج من أحدث حملاتنا وهوياتنا البصرية بأسلوب معرض الصور المستوحى من iOS؛ تفاصيل ملموسة وأرقام نمو حقيقية.
