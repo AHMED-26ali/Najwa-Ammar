@@ -42,6 +42,10 @@ export default function ProjectModal({ project, onClose, onRequestSimilar }: Pro
             src={project.image}
             alt={project.title}
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.currentTarget;
+              target.style.opacity = '0';
+            }}
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />

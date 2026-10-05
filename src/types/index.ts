@@ -15,7 +15,7 @@ export interface ProjectItem {
   id: string;
   title: string;
   client: string;
-  category: 'branding' | 'social' | 'advertising' | 'printing' | 'marketing';
+  category: 'branding' | 'social' | 'advertising' | 'printing' | 'marketing' | 'motion' | 'digital';
   categoryLabel: string;
   image: string;
   metric: {

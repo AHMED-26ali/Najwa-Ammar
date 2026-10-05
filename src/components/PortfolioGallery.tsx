@@ -82,12 +82,16 @@ export default function PortfolioGallery({ onSelectProject }: PortfolioGalleryPr
                 }`}
               >
                 {/* Photo Container */}
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-900">
                   <img
                     src={project.image}
                     alt={project.title}
                     referrerPolicy="no-referrer"
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      target.style.opacity = '0';
+                    }}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                   />
 

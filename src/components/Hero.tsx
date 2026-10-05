@@ -113,13 +113,18 @@ export default function Hero({ onOpenConsultation, onOpenContact }: HeroProps) {
                   </div>
                 </div>
 
-                {/* iPhone Screen Content: The Generated High-Fidelity Showcase Image */}
+                {/* Phone Screen Content: The Generated High-Fidelity Showcase Image */}
                 <div className="relative aspect-[9/18.5] w-full overflow-hidden bg-slate-900">
                   <img
-                    src="/src/assets/images/iphone_ad_mockup_1791143111186.jpg"
-                    alt="تصاميم نجوى عمار للدعاية والإعلان على شاشة آيفون"
+                    src="/images/iphone_ad_mockup_1791143111186.jpg"
+                    alt="تصاميم نجوى عمار للدعاية والإعلان على شاشة العرض"
                     referrerPolicy="no-referrer"
-                    loading="lazy"
+                    loading="eager"
+                    onError={(e) => {
+                      // Fallback to high-contrast modern poster background if network delays
+                      const target = e.currentTarget;
+                      target.style.display = 'none';
+                    }}
                     className="w-full h-full object-cover object-center"
                   />
 

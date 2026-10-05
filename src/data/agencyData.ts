@@ -251,7 +251,7 @@ export const PORTFOLIO_DATA: ProjectItem[] = [
     client: "مجموعة سديم العالمية",
     category: "branding",
     categoryLabel: "الهوية البصرية",
-    image: "/src/assets/images/brand_identity_mockup_1791143034344.jpg",
+    image: "/images/brand_identity_mockup_1791143034344.jpg",
     metric: {
       label: "زيادة الوعي بالبراند",
       value: "+185%"
@@ -268,7 +268,7 @@ export const PORTFOLIO_DATA: ProjectItem[] = [
     client: "مؤسسة الفعاليات الإبداعية",
     category: "advertising",
     categoryLabel: "الدعاية والإعلان",
-    image: "/src/assets/images/outdoor_billboard_ads_1791143050039.jpg",
+    image: "/images/outdoor_billboard_ads_1791143050039.jpg",
     metric: {
       label: "مشاهدات وتفاعل جماهيري",
       value: "+4.5M"
@@ -280,12 +280,46 @@ export const PORTFOLIO_DATA: ProjectItem[] = [
     clientQuote: "التصاميم كانت حديث الناس في الشوارع، ونسبة الإقبال تضاعفت بشكل مبهر."
   },
   {
+    id: "proj-3",
+    title: "واجهات وتطبيقات الحملات الإعلانية التفاعلية",
+    client: "منصة نيو ميديا الرقمية",
+    category: "marketing",
+    categoryLabel: "التسويق الرقمي",
+    image: "/images/iphone_ad_mockup_1791143111186.jpg",
+    metric: {
+      label: "معدل التحويل والمبيعات",
+      value: "4.8x"
+    },
+    description: "تصميم صفحات هبوط وإعلانات رقمية تفاعلية جذابة مخصصة لمنصات التواصل ومتاجر التطبيقات ترفع المبيعات وتحفز الإجراء الفوري.",
+    year: "2026",
+    tags: ["إعلانات رقمية", "واجهات تفاعلية", "صفحات هبوط", "سوشيال ميديا"],
+    scope: ["تصميم واجهات الهواتف التفاعلية", "إخراج قوالب السوشيال ميديا", "تحسين معدلات التحويل الفوري", "إطلاق الحملات الممولة"],
+    clientQuote: "حققنا أعلى عائد على الاستثمار الإعلاني بفضل التصاميم الاحترافية لنجوى عمار."
+  },
+  {
+    id: "proj-4",
+    title: "الإنتاج السينمائي والموشن جرافيك الإعلاني",
+    client: "استوديوهات فيجن للإعلام",
+    category: "social",
+    categoryLabel: "السوشيال ميديا والموشن",
+    image: "/images/video_production_studio_1791143061925.jpg",
+    metric: {
+      label: "مشاهدات الفيديو الإعلاني",
+      value: "+12M"
+    },
+    description: "إنتاج إعلانات مرئية متحركة ومؤثرات بصرية سينمائية متطورة ثلاثية الأبعاد تنبض بالحيوية وتحقق انتشاراً فيروسياً واسعاً.",
+    year: "2026",
+    tags: ["موشن جرافيك", "فيديو سينمائي", "إعلان تلفزيوني", "مؤثرات بصرية"],
+    scope: ["كتابة السيناريو الإعلاني المبتكر", "الرسم والتحريك ثلاثي وثنائي الأبعاد", "الهندسة الصوتية والتسجيل الاحترافي", "مونتاج بدقة 4K فائقة"],
+    clientQuote: "الفيديو حصد تفاعلاً قياسياً غير مسبوق في أول 48 ساعة فقط."
+  },
+  {
     id: "proj-5",
     title: "المطبوعات الفاخرة وتغليف هدايا الرواد",
     client: "شركة أفق للاستثمار العقاري",
     category: "printing",
     categoryLabel: "المطبوعات الإعلانية",
-    image: "/src/assets/images/hero_creative_agency_1791143022006.jpg",
+    image: "/images/hero_creative_agency_1791143022006.jpg",
     metric: {
       label: "صفقات عقارية مغلقة",
       value: "+34M"
