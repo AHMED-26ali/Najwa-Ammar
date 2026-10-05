@@ -81,8 +81,11 @@ export default function StatsCounter() {
               <Sparkles className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
               <span>أرقام حقيقية تصنع الفارق</span>
             </div>
-            <h2 className="text-xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-              إنجازات تترجم <span className="bg-gradient-to-r from-amber-400 via-emerald-400 to-blue-400 bg-clip-text text-transparent">ثقة عملائنا</span>
+            <h2 className="text-xl sm:text-3xl lg:text-4xl font-black text-white tracking-normal leading-[1.4] sm:leading-[1.25] py-1">
+              إنجازات تترجم{' '}
+              <span className="inline-block px-1.5 py-1.5 bg-gradient-to-r from-amber-400 via-emerald-400 to-blue-400 bg-clip-text text-transparent">
+                ثقة عملائنا
+              </span>
             </h2>
             <p className="text-slate-400 text-xs sm:text-base leading-relaxed">
               وراء كل رقم قصة نجاح إعلانية ملهمة وشراكة مستمرة مع رواد الأعمال والشركات.

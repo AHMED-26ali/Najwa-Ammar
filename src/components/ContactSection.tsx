@@ -56,9 +56,9 @@ export default function ContactSection({}: ContactSectionProps) {
             <span>تواصل وزيارة مباشرة</span>
           </div>
 
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-snug sm:leading-normal tracking-normal py-1">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-[1.4] sm:leading-[1.25] tracking-normal py-1">
             تواصل مع{' '}
-            <span className="inline-block py-1 px-1 bg-gradient-to-r from-emerald-600 via-teal-600 to-amber-500 bg-clip-text text-transparent">
+            <span className="inline-block px-1.5 py-1.5 bg-gradient-to-r from-emerald-600 via-teal-600 to-amber-500 bg-clip-text text-transparent">
               مطبعة نجوى عمار
             </span>
           </h2>

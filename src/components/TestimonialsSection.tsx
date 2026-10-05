@@ -18,8 +18,11 @@ export default function TestimonialsSection() {
             <span>شهادات نعتز بها</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
-            ماذا يقول <span className="bg-gradient-to-r from-emerald-600 to-amber-500 bg-clip-text text-transparent">شركاء نجاحنا؟</span>
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-normal leading-[1.4] sm:leading-[1.25] py-1">
+            ماذا يقول{' '}
+            <span className="inline-block px-1.5 py-1.5 bg-gradient-to-r from-emerald-600 to-amber-500 bg-clip-text text-transparent">
+              شركاء نجاحنا؟
+            </span>
           </h2>
 
           <p className="text-slate-600 text-base sm:text-lg">
