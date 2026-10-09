@@ -1,11 +1,17 @@
 {
+  "rewrites": [
+    {
+      "source": "/((?!assets|images|sitemap\\.xml|sitemap\\.txt|robots\\.txt|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/sitemap.xml",
       "headers": [
         {
           "key": "Content-Type",
-          "value": "text/xml; charset=utf-8"
+          "value": "application/xml; charset=utf-8"
         },
         {
           "key": "Cache-Control",
@@ -14,6 +20,10 @@
         {
           "key": "Access-Control-Allow-Origin",
           "value": "*"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "all"
         }
       ]
     },
@@ -44,6 +54,10 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         }
       ]
     }
